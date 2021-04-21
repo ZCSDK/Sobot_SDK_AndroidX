@@ -21,24 +21,3 @@ dependencies {
     compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
     api 'com.sobot.chat:sobotsupport-glidev4:1.0.8'
 }
-
-ext {
-    yourSiteUrl = 'https://github.com/ZCSDK/Sobot_SDK_AndroidX'
-    yourGitUrl = 'https://github.com/ZCSDK/Sobot_SDK_AndroidX.git'
-    YourIssueTrackerUrl = 'https://github.com/ZCSDK/Sobot_SDK_AndroidX/issues'
-
-    yourOtganizationId = 'sobot-wangshuai'
-    yourProName = 'sobotsdk_x'
-    yourProDesc = 'Android Library'
-
-    yourId = 'wangshuai'
-    yourName = 'wangshuai'
-    yourEmail = 'wangxingshuai@vip.q33q.com'
-
-    yourGroup = 'com.sobot.chat'
-    yourArtifactId = 'sobotsdk_x'
-    yourVersion = '2.9.6'
-
-    yourBintrayUserPath = './local.properties'
-}
-apply from: '../bintrayUpload.gradle'

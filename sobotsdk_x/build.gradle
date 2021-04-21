@@ -1,6 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.app_dev'
 
 android {
     compileSdkVersion 29
@@ -21,3 +19,7 @@ dependencies {
     compileOnly 'androidx.recyclerview:recyclerview:1.0.0'
     api 'com.sobot.chat:sobotsupport-glidev4:1.0.8'
 }
+
+
+//添加发布到jitpack脚本
+apply from :"../publishAndroidLib.gradle"

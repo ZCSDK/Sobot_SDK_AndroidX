@@ -147,10 +147,10 @@ public class SobotUtils {
         String appkey = SobotSPUtil.getStringData(context, "sobot_appkey", "");
         if (!TextUtils.isEmpty(appkey)) {
             info.setAppkey(appkey);
-
+info.setShowLeftBackPop(true);
             //设置标题显示模式
             SobotApi.setChatTitleDisplayMode(context,
-                    SobotChatTitleDisplayMode.values()[enumType], sobot_title_vlaue);
+                    SobotChatTitleDisplayMode.values()[enumType], sobot_title_vlaue,true);
             //设置是否开启消息提醒
             SobotApi.setNotificationFlag(context, sobot_isOpenNotification
                     , R.drawable.sobot_demo_logo_small_icon, R.drawable.sobot_demo_logo);

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/X_SobotSDK_Git.iml" filepath="$PROJECT_DIR$/X_SobotSDK_Git.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sobotsdk-x/sobotsdk-x.iml" filepath="$PROJECT_DIR$/sobotsdk-x/sobotsdk-x.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sobotsdkdemo/sobotsdkdemo.iml" filepath="$PROJECT_DIR$/sobotsdkdemo/sobotsdkdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sobot_SDK_AndroidX.iml" filepath="$PROJECT_DIR$/Sobot_SDK_AndroidX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdk_x/Sobot_SDK_AndroidX.sobotsdk_x.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdk_x/Sobot_SDK_AndroidX.sobotsdk_x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_SDK_AndroidX.sobotsdkdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/sobotsdkdemo/Sobot_SDK_AndroidX.sobotsdkdemo.iml" />
     </modules>
   </component>
 </project>

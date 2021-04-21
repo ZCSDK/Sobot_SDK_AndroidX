@@ -7,9 +7,11 @@ import android.view.View;
 
 import com.sobot.chat.SobotApi;
 import com.sobot.chat.SobotUIConfig;
+import com.sobot.chat.ZCSobotApi;
 import com.sobot.chat.api.model.SobotLocationModel;
 import com.sobot.chat.api.apiUtils.SobotBaseUrl;
 import com.sobot.chat.listener.SobotPlusMenuListener;
+import com.sobot.chat.utils.LogUtils;
 import com.sobot.chat.utils.ResourceUtils;
 import com.sobot.chat.utils.ToastUtil;
 import com.sobot.chat.widget.kpswitch.view.ChattingPanelUploadView;
@@ -28,8 +30,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         String appkey = SobotSPUtil.getStringData(this, "sobot_appkey", "");
-        appkey="dd0e991266a94723af14cc23cda5e1f1";
-        SobotBaseUrl.setHost("https://test.sobot.com");
+        appkey="1c1da2c0aad047d7ba1d14ecd18ae4f6";
+//        SobotBaseUrl.setHost("https://test.sobot.com");
         if (TextUtils.isEmpty(appkey)) {
             appkey = "991bcba6975246448640724385796b81";
         }
@@ -37,6 +39,20 @@ public class App extends Application {
         initUi();
 //        customMenu();
         initLocationModule();
+        ZCSobotApi.setShowDebug(true);
+        //设置 toolbar右边第一个按钮是否显示（更多）
+        SobotUIConfig.sobot_title_right_menu1_display = true;
+
+        //设置 toolbar右边第二个按钮是否显示（评价）
+        SobotUIConfig.sobot_title_right_menu2_display = true;
+        SobotUIConfig.sobot_head_title_is_bold=false;
+        //设置 toolbar右边第三个按钮是否显示（评价）
+        SobotUIConfig.sobot_title_right_menu3_display = true;
+        //修改toolbar右边第三个按钮的图片(R.drawable.sobot_icon_call为拨号图标，默认是评价图标)
+        SobotUIConfig.sobot_title_right_menu3_bg = R.drawable.sobot_phone;
+        //设置toolbar右边第三个按钮为拨号功能（有值则为拨号功能，电话号码不能为空）
+        SobotUIConfig.sobot_title_right_menu3_call_num = "18510000000";
+
     }
 
     //自定义UI
